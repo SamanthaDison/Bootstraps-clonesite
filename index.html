@@ -11,60 +11,92 @@
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css'>
     <title>Document</title>
 </head>
+<style>
+    /* This is for wire framing to see our rows/columns */
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
+
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"
+
+    ] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="mdi mdi-cat"></div>
-            </div>
-            <div class="col-6">
-                <div class="mdi mdi-cat"></div>
-            </div>
-        </div>
+    <header class="container-fluid">
         <div class="row">
             <div class="col-md-6">
-                <div class="mdi mdi-cat"></div>
+                <div class="mdi mdi-cat text-center fs-1"></div>
             </div>
             <div class="col-md-6">
-                <div class="mdi mdi-cat"></div>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">WORK</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">ABOUT</a>
+                            <a class="nav-item nav-link" href="#">EXPERTISE</a>
+                            <a class="nav-item nav-link" href="#">BLOG</a>
+                            <a class="nav-item nav-link" href="#">STORE</a>
+                            <a class="nav-item nav-link" href="#">CONTACT</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <p>Hello World</p>
+            </div>
+            <div class="col-md-6">
+                <p>Picture Here</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="mdi mdi-cat"></div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="mdi mdi-cat"></div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="mdi mdi-cat"></div>
-            </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="mdi mdi-cat"></div>
+            <div class="col-md-12 text-center">
+                <p>Hello World</p>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-md-4">
                 <div class="mdi mdi-cat"></div>
             </div>
-            <div class="col-sm-9">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="mdi mdi-cat"></div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="mdi mdi-cat"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="mdi mdi-cat"></div>
-                    </div>
-                </div>
+            <div class="col-md-4">
+                <div class="mdi mdi-cat"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="mdi mdi-cat"></div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <p>INSERT NAVS</p>
+            </div>
+            <div class="col-md-6">
+                <p>INSERT CONTACT INFO</p>
+            </div>
+        </div>
+
+    </footer>
+
 </body>
 
 </html>
