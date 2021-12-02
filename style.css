@@ -1,22 +1,18 @@
 .main-cat{
     padding: 1vh;
 }
-
-.middle-text{
-margin-left: 5em;
-margin-right: 5em;
-}
 .breeds{
     height: 200px;
     width: 200px;
 }
-
 .accessories{
     height: 200px;
     width: 200px;
 }
-
 .health{
     height: 200px;
     width: 200px;
+}
+.address{
+    padding-left: 3em;
 }
